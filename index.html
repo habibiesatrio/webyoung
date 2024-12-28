@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Goggle  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" /> 
+
+    <!-- responsive style -->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Logo Tittle Bar -->
+    <link rel="Icon" href="Assets/img/logo banua.png" type="image/x-icon" />
+
+    <title>PT Banoa Karya Prima</title>
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-transparent position-fixed w-100"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="Assets/img/logo banua.png"
+            alt=""
+            width="30"
+            class="d-inline-block align-text-top me-3"
+          />
+          PT Banoa Karya Prima</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="layanan.html">Layanan</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="Property.html">Properti</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+
+          <div>
+            <!-- <button class="button-primary"> <a href="login.html"></a>Daftar</button>  -->
+            <button class="btn-success" data-bs-toggle="button" onclick="window.location.href='signup.html'">Daftar</button>
+            <button class="btn-success" data-bs-toggle="button" onclick="window.location.href='login.html'">Masuk</button>
+            <!-- <button class="button-secondary"> <a href=""></a>Masuk</button> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="hero">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-md-6 hero-tagline my-auto">
+            <h1>Membantu Temukan Rumah Impian.</h1>
+            <p>
+              <span class="fw-bold">Rumah Impian</span> hadir untuk temukan
+              rumah terbaik untukmu, untuk di jual dengan sumber terpercaya.
+            </p>
+
+            <button class="button-lg-primary" href="login.html">Temukan Rumah</button>
+            <a href="login.html">
+              <img src="Assets/img/button arrow.png" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <img
+          src="Assets/img/hero banner.png"
+          alt=""
+          class="position-absolute end-0 bottom-0 img-hero"
+        />
+        <img
+          src="Assets/img/aceent.png"
+          alt=""
+          class="accsent-img h-100 position-absolute top-0 start-0"
+        />
+      </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="Layanan">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Layanan Kami</h2>
+            <span class="sub-tittle"
+              >Rumah impian hadir menjadi solusi bagi kamu</span
+            >
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-4 text-center">
+            <div class="card-layanan">
+              <div class="circle-icon position-relative mx-auto">
+                <img
+                  src="Assets/img/property baru-icon.png"
+                  alt=""
+                  class="position-absolute top-50 start-50 translate-middle"
+                />
+              </div>
+              <h3 class="mt-4">Property Baru</h3>
+              <p class="mt-3">
+                Rumah impian kini jadi kenyataan, Beli rumah bary dengan
+                fasilitas terbaik dengan lingkungan yang nyaman.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="card-layanan">
+              <div class="circle-icon position-relative mx-auto">
+                <img
+                  src="Assets/img/sewarumah-icon.png"
+                  alt=""
+                  class="position-absolute top-50 start-50 translate-middle"
+                />
+              </div>
+              <h3 class="mt-4">Sewa Rumah</h3>
+              <p class="mt-3">
+                Sewa rumah yang indah untuk keluarga anda, pilihan terbaik untuk
+                tempat tinggal keluarga mu.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="card-layanan">
+              <div class="circle-icon position-relative mx-auto">
+                <img
+                  src="Assets/img/belirumah-icon.png"
+                  alt=""
+                  class="position-absolute top-50 start-50 translate-middle"
+                />
+              </div>
+              <h3 class="mt-4">Beli Rumah</h3>
+              <p class="mt-3">
+                Beli Rumah sempurna dengan harga terbaik kualitas terjamin dari
+                sumber terpercaya.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Section -->
+
+    <section id="Search" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Temukan Rumah Impianmu</h2>
+
+            <p>
+              sekarang Anda dapat menghemat semua hal stres, waktu, dan biaya
+              tersembunyi, dengan ratusan rumah untuk anda
+            </p>
+          </div>
+
+          <div class="col-10 mx-auto mt-5">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Jual"
+                  type="button"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                >
+                  Jual
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Sewa"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                >
+                  Sewa
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#propertybaru"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                >
+                  Property Baru
+                </button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="Jual"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <!-- Dropdown Tipe Rumah  -->
+                <div class="input-group input-cari mb-3">
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="Assets/img/home icon.png" class="d-block d-lg-inline mx-auto" alt="" />
+                    Tipe Rumah
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">TYPE 38/78 Deret Luas = 6x13 M2 </a></li>
+                    
+                  </ul>
+
+                  <!-- Dropdown Range Harga -->
+
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="Assets/img/Range icon.png" class="d-block d-lg-inline mx-auto" alt="" />
+                    Range Harga
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Rp.160.000.000</a></li>
+                    
+                  </ul>
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Text input with dropdown button"
+                    placeholder="cari berdasarkam lokasi, ID, Property"
+                  />
+                  <button
+                    class="button-primary"
+                    type="button"
+                    id="button-addon2"  
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="Sewa"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                <div class="input-group input-cari mb-3">
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="Assets/img/home icon.png" alt="" />
+                    Tipe Rumah
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">TYPE 30/70 Deret Luas = 6x13 M2 </a></li>
+                    
+                  </ul>
+
+                  <!-- Dropdown Range Harga -->
+
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="Assets/img/Range icon.png" alt="" />
+                    Range Harga
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Rp.2.000.000 </a></li>
+                   
+                  </ul>
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Text input with dropdown button"
+                    placeholder="cari berdasarkam lokasi, ID, Property"
+                  />
+                  <button
+                    class="button-primary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="propertybaru"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                <div class="input-group input-cari mb-3">
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="Assets/img/home icon.png" alt="" />
+                    Tipe Rumah
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">TYPE 35/75 Deret Luas = 6x13 M2 </a></li>
+                  
+                  </ul>
+
+                  <!-- Dropdown Range Harga -->
+
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="Assets/img/Range icon.png" alt="" />
+                    Range Harga
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Rp.150.000.000</a></li>
+                    
+                  </ul>
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Text input with dropdown button"
+                    placeholder="cari berdasarkam lokasi, ID, Property"
+                  />
+                  <button
+                    class="button-primary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Cari
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rekomendasi Section -->
+
+    <section id="rekomendasi">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2>Rekomendasi Rumah Untuk Mu</h2>
+          </div>
+        </div>
+        <!-- section 1 -->
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+            <a href="login.html">
+            <div class="card p-2" style="width: 22rem">
+              <img src="Assets/img/home image 1.png" alt="" />
+              <div class="card-body">
+                <h4>IDR.2.000.000</h4>
+                <p class="mb-4" lh-sm>
+                  Jl.flamboyan I Komplek Taman Asoka Asri<br />
+                  <span class="text-danger">Sewa</span>
+                </p>
+              </div>
+
+              <div class="card-fasilitas d-flex justify-content-between px-4">
+                <span>
+                  <img src="Assets/img/bed-icon.png" alt="" /> 2
+                  <p>Kamar Tidur</p>
+                </span>
+
+                <span>
+                  <img src="Assets/img/bath-icon.png" alt="" /> 1
+                  <p>Kamar Mandi</p>
+                </span>
+
+                <span>
+                  <img src="Assets/img/luasrumah-icon.png" alt="" /> 160m
+                  <p>Luas Rumah</p>
+                </span>
+              </div>
+            </a>  
+            </div>
+          </div>
+
+          <!-- section 2 -->
+          <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+            <a href="login.html">
+            <div class="card p-2" style="width: 22rem">
+              <img src="Assets/img/home image 1.png" alt="" />
+              <div class="card-body">
+                <h4>IDR.164.000.000</h4>
+                <p class="mb-4" lh-sm>
+                  Jl.flamboyan I Komplek Taman Asoka Asri<br />
+                  <span class="text-warning">Jual</span>
+                </p>
+              </div>
+
+              <div class="card-fasilitas d-flex justify-content-between px-4">
+                <span>
+                  <img src="Assets/img/bed-icon.png" alt="" /> 4
+                  <p>Kamar Tidur</p>
+                </span>
+
+                <span>
+                  <img src="Assets/img/bath-icon.png" alt="" /> 4
+                  <p>Kamar Mandi</p>
+                </span>
+
+                <span>
+                  <img src="Assets/img/luasrumah-icon.png" alt="" /> 370m
+                  <p>Luas Rumah</p>
+                </span>
+              </div>
+            </a>
+            </div>
+          </div>
+
+          <!-- section 3 -->
+          <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+            <a href="login.html">
+            <div class="card p-2" style="width: 22rem">
+              <img src="Assets/img/home image 1.png" alt="" />
+              <div class="card-body">
+                <h4>IDR.150.000.000</h4>
+                <p class="mb-4" lh-sm>
+                  Jl.flamboyan I Komplek Taman Asoka Asri<br />
+                  <span class="text-success">Property Baru</span>
+                </p>
+              </div>
+
+              <div class="card-fasilitas d-flex justify-content-between px-4">
+                <span>
+                  <img src="Assets/img/bed-icon.png" alt="" /> 3
+                  <p>Kamar Tidur</p>
+                </span>
+
+                <span>
+                  <img src="Assets/img/bath-icon.png" alt="" /> 4
+                  <p>Kamar Mandi</p>
+                </span>
+
+                <span>
+                  <img src="Assets/img/luasrumah-icon.png" alt="" /> 360m
+                  <p>Luas Rumah</p>
+                </span>
+              </div>
+            </a>
+            </div>
+          </div>
+
+          <!-- section 4 -->
+          <!-- <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+            <div class="card p-2" style="width: 22rem">
+              <img src="Assets/img/home image 1.png" alt="" />
+              <div class="card-body">
+                <h4>IDR.1.500.000</h4>
+                <p class="mb-4" lh-sm>
+                  Jl.flamboyan I Komplek Taman Asoka Asri<br />
+                  <span class="text-danger">Sewa</span>
+                </p>
+              </div>
+
+              <div class="card-fasilitas d-flex justify-content-between px-4">
+                <span>
+                  <img src="Assets/img/bed-icon.png" alt="" /> 2
+                  <p>Kamar Tidur</p>
+                </span>
+
+                <span>
+                  <img src="Assets/img/bath-icon.png" alt="" /> 1
+                  <p>Kamar Mandi</p>
+                </span>
+
+                <span>
+                  <img src="Assets/img/luasrumah-icon.png" alt="" /> 120m
+                  <p>Luas Rumah</p>
+                </span>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- section 5 -->
+          <!-- <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+            <div class="card p-2" style="width: 22rem">
+              <img src="Assets/img/home image 1.png" alt="" />
+              <div class="card-body">
+                <h4>IDR.2.500.000</h4>
+                <p class="mb-4" lh-sm>
+                  Jl.flamboyan I Komplek Taman Asoka Asri<br />
+                  <span class="text-danger">Sewa</span>
+                </p>
+              </div>
+
+              <div class="card-fasilitas d-flex justify-content-between px-4">
+                <span>
+                  <img src="Assets/img/bed-icon.png" alt="" /> 2
+                  <p>Kamar Tidur</p>
+                </span>
+
+                <span>
+                  <img src="Assets/img/bath-icon.png" alt="" /> 2
+                  <p>Kamar Mandi</p>
+                </span>
+
+                <span>
+                  <img src="Assets/img/luasrumah-icon.png" alt="" /> 180m
+                  <p>Luas Rumah</p>
+                </span>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- section 6 -->
+          <!-- <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+            <div class="card p-2" style="width: 22rem">
+              <img src="Assets/img/home image 1.png" alt="" />
+              <div class="card-body">
+                <h4>IDR.3.000.000</h4>
+                <p class="mb-4" lh-sm>
+                  Jl.flamboyan I Komplek Taman Asoka Asri<br />
+                  <span class="text-danger">Sewa</span>
+                </p>
+              </div>
+
+              <div class="card-fasilitas d-flex justify-content-between px-4">
+                <span>
+                  <img src="Assets/img/bed-icon.png" alt="" /> 3
+                  <p>Kamar Tidur</p>
+                </span>
+
+                <span>
+                  <img src="Assets/img/bath-icon.png" alt="" /> 2
+                  <p>Kamar Mandi</p>
+                </span>
+
+                <span>
+                  <img src="Assets/img/luasrumah-icon.png" alt="" /> 200m
+                  <p>Luas Rumah</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Fitur Section -->
+
+    <section id="fitur" class="mt-5 overflow-hidden">
+      <div class="container position-relative">
+        <div class="row" mb-4>
+          <div class="col-lg-9 col-md-12 text-center text-lg-start">
+            <h2>Properti Rumah</h2>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <a href="login.html">
+            <button class="button-fitur">
+              Lihat Semua..
+              <div class="carousel-caption d-none d-md-block">
+              <img src="Assets/img/Arrow-fitur.png" alt="" class="ms-4" />
+            </div>
+            </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="container position-relative mt-5">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-start">
+              <div class="card-fitur me-3 position-relative">
+                <img src="Assets/img/rumah fitur 1.png" alt="" />
+
+                <div
+                  class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100"
+                >
+                  <div
+                    class="position-absolute top-50 start-50 translate-middle text-center w-100"
+                  >
+                    <h5>Kamar Tidur</h5>
+                    <span>Rumah minimalist Type-A2</span>
+                    <h6>IDR.2jt</h6>
+                    <button>Lihat Rumah</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card fitur 2 -->
+              <div class="card-fitur me-3 position-relative">
+                <img src="Assets/img/rumah fitur 2.png" alt="" />
+          
+                <div
+                  class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100"
+                >
+                  <div
+                    class="position-absolute top-50 start-50 translate-middle text-center w-100"
+                  >
+                    <h5>Kamar Tidur</h5>
+                    <span>Rumah minimalist Type-A2</span>
+                    <h6>IDR.164jt</h6>
+                    <button>Lihat Rumah</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card fitur 3 -->
+              <div class="card-fitur me-3 position-relative">
+                <img src="Assets/img/rumah fitur 3.png" alt="" />
+
+                <div
+                  class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100"
+                >
+                  <div
+                    class="position-absolute top-50 start-50 translate-middle text-center w-100"
+                  >
+                    <h5>Kamar Tidur</h5>
+                    <span>Rumah minimalist Type-A2</span>
+                    <h6>IDR.150jt</h6>
+                    <button>Lihat Rumah</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card fitur 4 -->
+              <div class="card-fitur me-3 position-relative">
+                <img src="Assets/img/rumah fitur 4.png" alt="" />
+
+                <div
+                  class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100"
+                >
+                  <div
+                    class="position-absolute top-50 start-50 translate-middle text-center w-100"
+                  >
+                    <h5>Kamar Tidur</h5>
+                    <span>Rumah minimalist Type-A2</span>
+                    <h6>IDR.1.5jt</h6>
+                    <button>Lihat Rumah</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="button-arrow-left position-absolute start-0 top-50 translate-middle-y"
+          >
+            <img src="Assets/img/arrow s icon.png" alt="" />
+          </button>
+
+          <button
+            class="button-arrow-right position-absolute end-0 top-50 translate-middle-y"
+          >
+            <img src="Assets/img/arrow n icon.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container-fluid overlay h-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>
+                Butuh Konsultasi..? Silahkan kontak kami Kami Siap Membantu
+              </h3>
+              <div class="kontak">
+                <h6>kontak</h6>
+                <div class="mb-3 d-flex align-items-center">
+                  <div>
+                    <img src="Assets/img/icon alamat.png" alt="" />
+                  </div>
+                  <a href="#"
+                    >jl.Pasar I, Desa Sidomulyo, Kec. Biru-Biru Kab.Deli
+                    Serdang</a
+                  >
+                </div>
+
+                <div class="mb-3">
+                  <img src="Assets/img/icon telfon.png" alt="" />
+                  <a href="#">+62 812-6940-0206</a>
+                </div>
+
+                <div class="mb-3">
+                  <img src="Assets/img/icon email.png" alt="" />
+                  <a href="#">denayapramudya55@gmail.com</a>
+                </div>
+              </div>
+
+              <h6>Social Media</h6>
+              <a href="#" class="me-lg-3 me-1"
+                ><img src="Assets/img/facebook.png" alt=""
+              /></a>
+              <a href="#" class="me-lg-3 me-1"
+                ><img src="Assets/img/twitter.png" alt=""
+              /></a>
+              <a href="https://www.instagram.com/bagasprayogaa_/" class="me-lg-3 me-1"
+                ><img src="Assets/img/instagram.png" alt=""
+              /></a>
+              <a href="#" class="linkrumahimpian">Rumah Impian</a>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card-contact w-100">
+                <form>
+                  <h2>Ada pertanyaan..?</h2>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput" class="d-flex align-items-center"
+                      >Masukan email anda disini...</label
+                    >
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput" class="d-flex align-items-center"
+                      >Pertanyaan Anda..</label
+                    >
+                  </div>
+
+                  <button type="submit" class="button-kontak">Kirim</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="d-flex align-items-center position-relative">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 d-flex align-items-center justify-content-lg-start justify-content-center">
+              <img src="Assets/img/logo banua.png" class="h-25" alt="" />
+              <a href="#" class="ms-3">PT Banoa Karya Prima</a>
+            </div>
+            <div
+              class="col-md-5 d-flex justify-content-evenly align-items-center justify-content-center"
+            >
+              <a href="#">Beranda</a>
+              <a href="#">Layanan</a>
+              <a href="#">Properti</a>
+              <a href="#">Kontak</a>
+            </div>
+          </div>
+          <div
+            class="row position-absolute copyright start-50 translate-middle"
+          >
+            <div class="col-12">
+              <p class="text-center">@2024 copyright bg creative PT Banoa Karya Prima.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

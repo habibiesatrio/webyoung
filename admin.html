@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .sidebar {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      background-color: #343a40;
+      color: white;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .sidebar a:hover {
+      background-color: #495057;
+    }
+    .navbar {
+      margin-left: 250px;
+    }
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: calc(100% - 250px);
+      margin-left: 250px;
+    }
+    table {
+      margin-top: 20px;
+    }
+    table th, table td {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2 class="text-center">Admin Panel</h2>
+    <a href="#" id="dashboardBtn">Dashboard</a>
+    <a href="#" id="typePropertyBtn">Tipe Properti</a>
+    <a href="#" id="propertiesBtn">Properti Dijual</a>
+    <a href="#" id="customersBtn">Data Pelanggan</a>
+    <a href="#" id="ordersBtn">Pemesanan Properti</a>
+    <a href="#" id="logoutBtn">Logout</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <span class="navbar-brand">PT Properti Jaya</span>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="content" id="mainContent">
+    <h1>Welcome to the Admin Pt Banoa Karya Prima</h1>
+    <p>Silakan pilih menu di sebelah kiri untuk mengelola data.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 PT Properti Jaya. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const mainContent = document.getElementById('mainContent');
+
+    const pages = {
+      dashboardBtn: `
+        <h1>Dashboard</h1>
+        <div class="row">
+          <div class="col-md-3">
+            <button class="btn btn-primary w-100">View Detail Property</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn btn-primary w-100">View Detail Customer</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn btn-primary w-100">View Detail Pesanan Pelanggan</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn btn-primary w-100">View Detail Pembayaran</button>
+          </div>
+        </div>`,
+      typePropertyBtn: `
+        <h1>Tipe Properti</h1>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Tipe Properti</th>
+              <th>Nama Properti</th>
+              <th>Harga</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Rumah</td>
+              <td>Rumah Mewah</td>
+              <td>Rp 2.000.000.000</td>
+              <td><button class="btn btn-warning btn-sm">Edit</button></td>
+            </tr>
+          </tbody>
+        </table>`,
+      customersBtn: `
+        <h1>Data Pelanggan</h1>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+              <th>Alamat</th>
+              <th>Pekerjaan</th>
+              <th>Email</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>Jakarta</td>
+              <td>Pengusaha</td>
+              <td>john.doe@example.com</td>
+              <td><button class="btn btn-danger btn-sm">Hapus</button></td>
+            </tr>
+          </tbody>
+        </table>`,
+      ordersBtn: `
+        <h1>Pemesanan Properti</h1>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Booking ID</th>
+              <th>Nama Customer</th>
+              <th>Jam, Tanggal</th>
+              <th>Jenis Pembayaran</th>
+              <th>Status</th>
+              <th>Tanggal Verifikasi</th>
+              <th>Detail Order</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>BK12345</td>
+              <td>Jane Smith</td>
+              <td>10:00, 21-12-2024</td>
+              <td>Kartu Kredit</td>
+              <td class="text-success">Terverifikasi</td>
+              <td>21-12-2024</td>
+              <td><button class="btn btn-info btn-sm">Detail</button></td>
+            </tr>
+          </tbody>
+        </table>`,
+      logoutBtn: '<h1>Logout</h1><p>Anda telah keluar dari sistem.</p>',
+    };
+
+    document.querySelectorAll('.sidebar a').forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const pageContent = pages[e.target.id];
+        if (pageContent) {
+          mainContent.innerHTML = pageContent;
+        }
+        if (e.target.id === 'logoutBtn') {
+          setTimeout(() => {
+            alert('Anda telah berhasil logout.');
+            window.location.reload();
+          }, 1000);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

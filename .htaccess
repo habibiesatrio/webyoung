@@ -1,0 +1,31 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Set the base directory for the rewrite rules
+RewriteBase /
+
+# Redirect from www to non-www (optional)
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Redirect to a custom 404 error page
+ErrorDocument 404 /404.html
+
+# Prevent directory listing
+Options -Indexes
+
+# Allow access to specific file types
+<FilesMatch "\.(jpg|jpeg|png|gif|css|js|ico|html)$">
+    Allow from all
+</FilesMatch
+
+# Deny access to sensitive files
+<FilesMatch "\.(htaccess|ini|log|env)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Enable compression for better performance (optional)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>
